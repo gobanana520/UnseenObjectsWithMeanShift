@@ -55,6 +55,15 @@ If you find the method useful in your research, please consider citing:
 - CUDA 9.1 or above
 
 ### Install
+
+```bash
+mamba install ninja transforms3d pillow IPython imageio cython shapely timm h5py
+python -m pip install --no-cache-dir easydict submitit
+cd MSMFormer/meanshiftformer/modeling/pixel_decoder/ops
+bash make.sh
+```
+
+
 The code is based on [Detetron2 framework](https://detectron2.readthedocs.io/en/latest/tutorials/getting_started.html).
 1. Install PyTorch
 2. Install [Detetron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
