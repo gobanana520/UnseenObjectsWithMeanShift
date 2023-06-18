@@ -218,7 +218,7 @@ def main(cfg):
     # Process the sequence
     ###########################################################################
     sequence_folder = args.sequence_folder
-    meta_file = os.path.join(sequence_folder, "meta.yaml")
+    meta_file = os.path.join(sequence_folder, "meta.yml")
     rs_serials, rs_width, rs_height, rs_count = load_meta_data(meta_file)
 
     for rs_serial in tqdm(RS_CAMERAS):
@@ -235,7 +235,7 @@ def main(cfg):
             os.makedirs(save_folder)
 
         intrinsic_file = os.path.join(
-            CALIB_DIR, "intrinsics", f"rs_{rs_serial}_{rs_width}x{rs_height}.yaml"
+            CALIB_DIR, "intrinsics", f"rs_{rs_serial}_{rs_width}x{rs_height}.yml"
         )
 
         for idx in range(1):
