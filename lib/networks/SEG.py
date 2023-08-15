@@ -136,7 +136,7 @@ def update_model(model, data):
     # print('=================================================')
 
     if data is not None:
-        print('data keys')
+        # print('data keys')
         #print('=================================================')
         data_new = data.copy()
         for k, v in data.items():
@@ -150,7 +150,7 @@ def update_model(model, data):
         #print('=================================================')
 
         pretrained_dict = {k: v for k, v in data_new.items() if k in model_dict and v.size() == model_dict[k].size()}
-        print('load the following keys from the pretrained model')
+        # print('load the following keys from the pretrained model')
         # print('=================================================')
         # for k, v in pretrained_dict.items():
         #     print(k)
